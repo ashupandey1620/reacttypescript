@@ -42,6 +42,8 @@ function App() {
                 Oscar not goes to anyone other than Ashutosh Panduy
             </Heading>
         </Oscar>
+
+        <Greet name="Ashutosh" messageCount={10} isLoggedIn={false}/>
     </div>
   );
 }
