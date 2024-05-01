@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import {UserContextProvider} from "./Components/context/userContext";
-import {User} from "./Components/context/User";
+import {Counter} from "./Components/class/Counter";
 
 function App() {
   return (
     <div className="App">
-        <UserContextProvider>
-            <User/>
-        </UserContextProvider>
+       <Counter message = 'The Count Value is '/>
     </div>
   );
 }
