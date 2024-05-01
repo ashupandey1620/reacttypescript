@@ -2,17 +2,14 @@ import React from 'react';
 import './App.css';
 import {Button} from "./Components/Button";
 import {Input} from "./Components/Input";
+import {Container} from "./Components/Container";
 
 function App() {
 
 
   return (
     <div className="App">
-      <Button handleClick={(event,id)=>{
-          console.log("Button Clicked",event);
-      }}
-      />
-        <Input value='' handlechange={(event)=>console.log(event)}/>
+        <Container styles={{border:'1px solid red',padding:''}}/>
     </div>
   );
 }
