@@ -18,5 +18,5 @@ export const Greet = (props:GreetProps) => {
     )
 }
 
-//use types while building Applications
-//use interfaces while building libraries
+//use types in typescript while building Applications
+//use interfaces in typescript while building libraries
