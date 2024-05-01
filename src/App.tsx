@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import {Container} from "./Components/Container";
+import {Box} from './Components/context/Box'
+import {ThemeContextProvider} from "./Components/context/ThemeContext";
+
 
 function App() {
   return (
     <div className="App">
-        <Container styles={{border:'1px solid red',padding:''}}/>
+        <ThemeContextProvider>
+            <Box/>
+        </ThemeContextProvider>
     </div>
   );
 }
