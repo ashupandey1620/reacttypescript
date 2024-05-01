@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import {Box} from './Components/context/Box'
-import {ThemeContextProvider} from "./Components/context/ThemeContext";
-
+import {UserContextProvider} from "./Components/context/userContext";
+import {User} from "./Components/context/User";
 
 function App() {
   return (
     <div className="App">
-        <ThemeContextProvider>
-            <Box/>
-        </ThemeContextProvider>
+        <UserContextProvider>
+            <User/>
+        </UserContextProvider>
     </div>
   );
 }
