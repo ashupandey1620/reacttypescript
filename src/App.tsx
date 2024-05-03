@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 import {Counter} from "./Components/class/Counter";
+import {List} from "./Components/generics/list";
 
 function App() {
   return (
     <div className="App">
-
+      <List onClick={(item)=> console.log(item)} items={['Batman','SuperMan','Wonder Women']} />
+      <List onClick={(item)=> console.log(item)} items={[1,2,3]} />
     </div>
   );
 }
